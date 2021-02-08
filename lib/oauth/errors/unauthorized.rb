@@ -6,7 +6,7 @@ module OAuth
     end
 
     def to_s
-      [request.code, request.message] * " "
+      [request&.code, request&.message] * " "
     end
   end
 end
